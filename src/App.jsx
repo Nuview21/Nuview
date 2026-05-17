@@ -204,9 +204,9 @@ function App() {
             <div>
               <h4 className="font-[space-mono] text-xs uppercase tracking-widest text-orange-400 mb-6">Connect</h4>
               <ul className="space-y-3 text-sm text-white font-[space-mono]">
-                <li className="hover:text-orange-400 transition-colors cursor-pointer underline decoration-orange-400/30">LinkedIn</li>
-                <li className="hover:text-orange-400 transition-colors cursor-pointer underline decoration-orange-400/30">Instagram</li>
-                <li className="hover:text-orange-400 transition-colors cursor-pointer underline decoration-orange-400/30">Twitter / X</li>
+                <li className="hover:text-orange-400 transition-colors cursor-pointer underline decoration-orange-400/30"><a href="https://linkedin.com/in/nuview-limited-b8306440b" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li className="hover:text-orange-400 transition-colors cursor-pointer underline decoration-orange-400/30"><a href="https://www.instagram.com/nuview2026/?hl=en" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                <li className="hover:text-orange-400 transition-colors cursor-pointer underline decoration-orange-400/30"><a href="https://x.com/Nuview2026" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
               </ul>
             </div>
 
