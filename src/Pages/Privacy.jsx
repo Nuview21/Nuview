@@ -76,10 +76,6 @@ function Privacy() {
               </div>
             ))}
           </div>
-
-          <section className="bg-neutral-900/50 p-8 border border-neutral-800 rounded-sm">
-            <h3 className="font-[space-mono] text-orange-400 text-sm uppercase mb-4">Inquiries</h3>
-          </section>
         </div>
 
         <div className="mt-20">
