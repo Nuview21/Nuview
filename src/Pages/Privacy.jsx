@@ -79,12 +79,6 @@ function Privacy() {
 
           <section className="bg-neutral-900/50 p-8 border border-neutral-800 rounded-sm">
             <h3 className="font-[space-mono] text-orange-400 text-sm uppercase mb-4">Inquiries</h3>
-            <p className="text-neutral-300">
-              For matters regarding data protection or to request data deletion, contact our lead developer at: 
-              <span className="block mt-2 text-white font-bold underline decoration-orange-400/30">
-                privacy@nuview.dev
-              </span>
-            </p>
           </section>
         </div>
 
