@@ -36,6 +36,16 @@ const techStack = [
   'Figma', 'GSAP', 'Framer Motion', 'Stripe',
 ]
 
+const demo = [{
+  image:"https://cdn.jsdelivr.net/gh/Dwaynewisdom/Portfolio-New@c23d98829b33490b8ef0293713e720878aeb00d3/Images/Website.png",
+  Company:"Central Belts and Hosing",
+  goal:"We strived to potray the premium quality of the company and it's beliefs, presenting reliability and trust",
+  Demo:"https://nuview-26.github.io/CentralBelts/",
+  view:"View Demo"
+  
+
+}]
+
 function App() {
   const containerRef = useRef(null)
   const headingRef   = useRef(null)
@@ -74,6 +84,26 @@ function App() {
       ease: 'power2.out',
       delay: 1,
     })
+
+    gsap.fromTo('#demos', {
+      x: -500,
+      opacity: 0,
+    }, {
+     
+      opacity: 1,
+      x: 0,
+      stagger: 0.7,
+      duration: 2,
+      ease: 'power2.out',
+      delay: 1, 
+      scrollTrigger: {
+        trigger: '#demos', 
+        start: "70% bottom",
+        end:"+300",
+        scrub: 1,          
+      },
+    });
+    
   }, [])
 
   return (
@@ -144,6 +174,20 @@ function App() {
               </div>
             ))}
           </div>
+        </section>
+
+        <section id='DEMOS' className='font-[space-mono] flex flex-col  items-center align-center justify-center gap-2 mb-50'>
+          <h1 className='text-4xl font-bold text-orange-400 p-20'>Demo's </h1>
+          {demo.map(({ image, Company, goal, Demo, view }, index) => (
+            <div id='demos' key={index} className='w-70 rounded-2xl text-center border-3 border-amber-700 md:w-90 hover:scale-110'>
+              <img src={image} className='rounded-t-2xl' alt="Website homepage"/>
+              <div className = ' bg-amber-900 rounded-b-2xl'>
+                <h1 className='text-2xl uppercase font-bold md:text-3xl'>{Company}</h1>
+                <h2 className='md:text-2xl md:p-5'>{goal}</h2>
+                <a href={Demo} target = "_blank"><span className='text-orange-200 hover:text-3xl' >{view}</span></a>
+              </div>
+            </div> 
+          ))}
         </section>
 
         <section className="px-6 md:px-16 py-20 max-w-5xl">
