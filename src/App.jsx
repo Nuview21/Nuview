@@ -179,12 +179,12 @@ function App() {
         <section id='DEMOS' className='font-[space-mono] flex flex-col  items-center align-center justify-center gap-2 mb-50'>
           <h1 className='text-4xl font-bold text-orange-400 p-20'>Demo's </h1>
           {demo.map(({ image, Company, goal, Demo, view }, index) => (
-            <div id='demos' key={index} className='w-70 rounded-2xl text-center border-3 border-amber-700 md:w-90 hover:scale-110'>
+            <div id='demos' key={index} className='w-70 rounded-2xl text-center border-3 border-orange-400 md:w-90 hover:scale-110'>
               <img src={image} className='rounded-t-2xl' alt="Website homepage"/>
-              <div className = ' bg-amber-900 rounded-b-2xl'>
-                <h1 className='text-2xl uppercase font-bold md:text-3xl'>{Company}</h1>
-                <h2 className='md:text-2xl md:p-5'>{goal}</h2>
-                <a href={Demo} target = "_blank"><span className='text-orange-200 hover:text-3xl' >{view}</span></a>
+              <div className = ' bg-orange-400 rounded-b-2xl'>
+                <h1 className='text-black text-2xl uppercase font-bold md:text-3xl'>{Company}</h1>
+                <h2 className='text-black md:text-2xl md:p-5'>{goal}</h2>
+                <a href={Demo} target = "_blank"><span className='text-black hover:text-3xl' >{view}</span></a>
               </div>
             </div> 
           ))}
